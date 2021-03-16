@@ -58,11 +58,11 @@
   </div>
   <div class="mb-3">
     <label for="" class="form-label">Facebook</label>
-    <input id="fecabook" name=facebook" type="text"  class="form-control">
+    <input id="facebook" name="facebook" type="text"  class="form-control">
   </div>
   <div class="mb-3">
     <label for="" class="form-label">Teléfono</label>
-    <input id="nro_telefono" name=nro_telefono" type="text"  class="form-control" >
+    <input id="nro_telefono" name="nro_telefono" type="text"  class="form-control" >
   </div>
   <div class="mb-3">
 
