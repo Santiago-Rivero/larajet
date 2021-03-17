@@ -10,11 +10,7 @@
             @csrf
 
             <div>
-<<<<<<< Updated upstream
-                <x-jet-label for="name" value="{{ __('name') }}" />
-=======
                 <x-jet-label for="name" value="{{ __('Nombre') }}" />
->>>>>>> Stashed changes
                 <x-jet-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             </div>
 
@@ -53,19 +49,11 @@
 
             <div class="flex items-center justify-end mt-4">
                 <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('login') }}">
-<<<<<<< Updated upstream
-                    {{ __('Esta registrado?') }}
+                    {{ __('¿Esta registrado?') }}
                 </a>
 
                 <x-jet-button class="ml-4">
                     {{ __('Registrese') }}
-=======
-                    {{ __('¿Ya estas registrado?') }}
-                </a>
-
-                <x-jet-button class="ml-4">
-                    {{ __('Registrar') }}
->>>>>>> Stashed changes
                 </x-jet-button>
             </div>
         </form>

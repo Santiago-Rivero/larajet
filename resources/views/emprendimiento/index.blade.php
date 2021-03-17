@@ -53,7 +53,7 @@
         <td>{{$emprendimiento->sitio_web}}</td>
         <td>{{$emprendimiento->instagram}}</td>
         <td>{{$emprendimiento->facebook}}</td>
-        <td>{{$emprendimiento->nro_telefono}}</td>
+        <td>{{$emprendimiento->telefono}}</td>
         <td><img src="images/{{$emprendimiento->logo}}" weigt="40" alt=""></td>
         <td>{{$emprendimiento->tipoempresa_id}}</td>
         <td>
@@ -62,7 +62,7 @@
           <a href="/emprendimientos/{{$emprendimiento->id}}/show" class="btn btn-primary">Visualizar</a>
               @csrf
               @method('DELETE')
-          <button type="submit" class="btn btn-danger">Delete</button>
+          <button type="submit" class="btn btn-danger">Borrar</button>
          </form>
         </td>
     </tr>
