@@ -62,7 +62,7 @@
           <a href="/emprendimientos/{{$emprendimiento->id}}/show" class="btn btn-primary">Visualizar</a>
               @csrf
               @method('DELETE')
-          <button type="submit" class="btn btn-danger">Delete</button>
+          <button type="submit" class="btn btn-danger">Borrar</button>
          </form>
         </td>
     </tr>
