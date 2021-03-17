@@ -28,8 +28,10 @@
 
   <div class="mb-3">
     <label for="" class="form-label">Nombre</label>
-    <input id="codigo" name="codigo" type="text" class="form-control">
+    <input id="nombre" name="nombre" type="text" class="form-control">
   </div>
+
+  
   <div class="mb-3">
     <label for="" class="form-label">Descripción</label>
     <input id="descripcion" name="descripcion" type="text" class="form-control" >
