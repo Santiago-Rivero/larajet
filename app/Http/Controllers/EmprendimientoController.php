@@ -46,7 +46,7 @@ class EmprendimientoController extends Controller
     public function store(Request $request)
     {
 
-        
+
         $emprendimientos = new Emprendimiento();
         $emprendimientos->nombre = $request->get('nombre');
         $emprendimientos->descripcion = $request->get('descripcion');
@@ -61,6 +61,7 @@ class EmprendimientoController extends Controller
         $emprendimientos->usuario_id = Auth::id();
         $emprendimientos->tipoempresa_id = $request->get('tipoempresa_id');
         $emprendimientos->save();
+        
 
         $Mensaje=["required"=>'El campo :attribute es requerido'];
 

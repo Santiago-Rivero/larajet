@@ -22,12 +22,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
 
-Route::resource('articulos', 'App\Http\Controllers\ArticuloController');
 
-Route::resource('usuarios', 'App\Http\Controllers\UsuarioController');
+Route::resource('articulos', 'App\Http\Controllers\ArticuloController')->middleware('auth');
 
-Route::resource('emprendimientos', 'App\Http\Controllers\EmprendimientoController');
+Route::resource('usuarios', 'App\Http\Controllers\UsuarioController')->middleware('auth');
 
-Route::resource('tipoempresas', 'App\Http\Controllers\TipoempresaController');
+Route::resource('emprendimientos', 'App\Http\Controllers\EmprendimientoController')->middleware('auth');
 
-Route::resource('localidades', 'App\Http\Controllers\LocalidadController');
+Route::resource('tipoempresas', 'App\Http\Controllers\TipoempresaController')->middleware('auth');
+
+Route::resource('localidades', 'App\Http\Controllers\LocalidadController')->middleware('auth');
